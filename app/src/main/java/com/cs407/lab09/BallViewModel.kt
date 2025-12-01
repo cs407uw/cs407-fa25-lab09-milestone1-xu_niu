@@ -50,8 +50,8 @@ class BallViewModel : ViewModel() {
                 val sensorX = event.values[0]
                 val sensorY = event.values[1]
 
-                val xAcc = sensorX
-                val yAcc = -sensorY
+                val xAcc = -sensorX
+                val yAcc = sensorY
 
                 currentBall.updatePositionAndVelocity(
                     xAcc = xAcc,
